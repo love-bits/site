@@ -7,10 +7,27 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import { Global, css } from "@emotion/core"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-import "./layout.css"
+import Header from "../Header"
+
+const resetBody = css`
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  button {
+    cursor: pointer;
+  }
+`
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,21 +42,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Global styles={resetBody} />
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      <main>{children}</main>
     </>
   )
 }
