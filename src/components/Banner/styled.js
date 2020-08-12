@@ -3,6 +3,9 @@ import Img from "gatsby-image"
 
 export const Banner = styled.section`
   width: 100%;
+  max-width: 859px;
+  margin: 0 auto;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -18,10 +18,13 @@ export function Banner({ logo }) {
 
   return (
     <S.Banner>
-      <S.BannerImg fluid={data.placeholderImage.childImageSharp.fluid} />
+      <S.BannerImg
+        fluid={data.placeholderImage.childImageSharp.fluid}
+        alt="Pessoas conversando"
+      />
 
       <S.Info>
-        <img src={logo.src} />
+        <img src={logo.src} alt="Logo Love Bits" />
         <h2>Próximo Meetup</h2>
         <span>31/05 às 18h</span>
         <button>MAIS INFORMAÇÕES</button>

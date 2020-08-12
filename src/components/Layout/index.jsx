@@ -9,8 +9,6 @@ const resetBody = css`
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-    max-width: 859px;
-    margin: 0 auto;
   }
 
   button {

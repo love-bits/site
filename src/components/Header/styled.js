@@ -3,6 +3,8 @@ import Img from "gatsby-image"
 
 export const Header = styled.header`
   width: 100%;
+  max-width: 859px;
+  margin: 0 auto;
   height: 100px;
   padding: 2rem 0;
   display: flex;
