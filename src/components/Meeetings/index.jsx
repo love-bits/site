@@ -5,7 +5,6 @@ import * as S from "./styled"
 const allMeetings = require("../../data/meetings.json")
 
 export function Meeetings() {
-  console.log()
   return (
     <S.Meeetings>
       <h3>Encontros</h3>
