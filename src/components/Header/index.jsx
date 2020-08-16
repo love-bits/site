@@ -29,7 +29,9 @@ export function Header({ logo }) {
           <a href="#meetups">Encontros</a>
         </li>
         <li>
-          <a href="#join">Faça Parte</a>
+          <a href="https://discord.gg/jDVnYrr" target="_blank">
+            Faça Parte
+          </a>
         </li>
       </ul>
     </S.Header>

@@ -38,6 +38,26 @@ export const Header = styled.header`
         color: #000;
         text-decoration: none;
       }
+
+      &:last-of-type {
+        position: relative;
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: -5px;
+          left: -8px;
+          width: 100px;
+          height: 31px;
+          background-color: #e74c3c;
+          z-index: -1;
+          border-radius: 5px;
+        }
+
+        a {
+          color: #fff;
+        }
+      }
     }
   }
 `
