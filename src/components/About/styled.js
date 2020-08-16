@@ -10,7 +10,7 @@ export const About = styled.section`
 export const Content = styled.div`
   width: 100%;
   max-width: 859px;
-  margin: 0 auto;
+  margin: -50px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;

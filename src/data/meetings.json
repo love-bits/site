@@ -1,0 +1,40 @@
+{
+  "meetings": [
+    {
+      "img": "https://i.ytimg.com/vi/tettsv0bhUA/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA5FsyfwJi-DHKKmAlSAtX1RcUhtg",
+      "date": "31/05 às 18 horas",
+      "title": "Componentização e arquitetura hexagonal - Francisco Thiago de Almeida",
+      "link": "https://www.youtube.com/watch?v=tettsv0bhUA&t"
+    },
+    {
+      "img": "https://i.ytimg.com/vi/3_YcAsX2ELw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD44R177Bwv-nIeZCfRJO-bpAruiw",
+      "date": "31/05 às 18 horas",
+      "title": "Desmistificando a carreira de QA - Daiane Quele",
+      "link": "https://www.youtube.com/watch?v=3_YcAsX2ELw"
+    },
+    {
+      "img": "https://i.ytimg.com/vi/sNH3FaYJc4Q/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCepkOTZmjlk54kF33pCAW4t2GKqQ",
+      "date": "31/05 às 18 horas",
+      "title": "Como se preparar para uma vaga DEV - Julio Rodrigues",
+      "link": "https://www.youtube.com/watch?v=sNH3FaYJc4Q"
+    },
+    {
+      "img": "https://i.ytimg.com/vi/4cINP28tIF0/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLB2s8VBzIs1KrwRPogOUPtufrg4BQ",
+      "date": "31/05 às 18 horas",
+      "title": "Como UX pode ajudar o seu frontend? - Livia Gabos",
+      "link": "https://www.youtube.com/watch?v=4cINP28tIF0"
+    },
+    {
+      "img": "https://i.ytimg.com/vi/aVgePiyNBcw/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDw5FTHbgsnj_yfUmxXznOsJN4jrw",
+      "date": "31/05 às 18 horas",
+      "title": "Typescript!! Uma breve introdução - Cristiano Gonçalves",
+      "link": "https://www.youtube.com/watch?v=aVgePiyNBcw"
+    },
+    {
+      "img": "https://i.ytimg.com/vi/typKb9vfyEI/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLA0ELGdirb7U5BVb7REJiCx3WZCPg",
+      "date": "31/05 às 18 horas",
+      "title": "Conhecendo flutter - Lucas Reinaldo",
+      "link": "https://www.youtube.com/watch?v=typKb9vfyEI"
+    }
+  ]
+}
