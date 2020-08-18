@@ -9,10 +9,18 @@ export const Banner = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `
 
 export const BannerImg = styled(Img)`
   width: 417px;
+  @media (max-width: 900px) {
+    display: none;
+  }
 `
 
 export const Info = styled.div`

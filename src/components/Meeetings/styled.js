@@ -8,7 +8,11 @@ export const Meeetings = styled.section`
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 2rem auto 0 auto;
+
+  @media (max-width: 900px) {
+    padding: 2rem;
+  }
 
   h3 {
     font-weight: bold;

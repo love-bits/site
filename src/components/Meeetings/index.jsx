@@ -18,7 +18,7 @@ export function Meeetings() {
               <p>{meeting.title}</p>
             </S.MeetingCardInfo>
 
-            <a href={meeting.link} target="_blank">
+            <a href={meeting.link} target="_blank" rel="noreferrer">
               Acessar
             </a>
           </S.MeetingCard>
@@ -28,6 +28,7 @@ export function Meeetings() {
       <S.AllMeetingsButton
         href="https://www.youtube.com/channel/UCRFoyHS51F6R8IB4xBsPORQ/featured"
         target="_blank"
+        rel="noreferrer"
       >
         Ver todos
       </S.AllMeetingsButton>

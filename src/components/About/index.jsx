@@ -34,17 +34,37 @@ export function About() {
 
       <S.Content>
         <S.AboutText>
+          <h3>Quem Somos?</h3>
           <p>
-            Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não
-            altera o pão duris. Si num tem leite então bota uma pinga aí
-            cumpadi! Paisis, filhis, espiritis santis. Posuere libero varius.
-            Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi.
+            Nossa missão é manter um espaço aberto para a propagação democrática
+            de conhecimento diverso e livre de preconceitos.
           </p>
+
           <p>
-            Mé faiz elementum girarzis, nisi eros vermeio. Manduma pindureta
-            quium dia nois paga. Mauris nec dolor in eros commodo tempor. Aenean
-            aliquam molestie leo, vitae iaculis nisl. Praesent malesuada urna
-            nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.
+            Em relação ao nosso nome, o Love vem da nossa paixão por tecnologia
+            e, ao mesmo tempo, é uma singela homenagem à primeira programadora
+            da História, Ada Lovelace. O Bits, pois referenciam os átomos do
+            nosso universo, e no final, todos convergimos neles,
+            independentemente de tecnologia.
+          </p>
+
+          <p>
+            Estamos decididos a compartilhar conhecimento livremente a todos
+            através de encontros virtuais e presenciais, sem nenhum julgamento
+            ou preconceito.
+          </p>
+
+          <p>
+            Como comunidade prezamos pela diversidade e democratização dos
+            espaços, trabalhamos continuamente para criar um espaço acolhedor,
+            onde qualquer um possa se sentir à vontade para partilhar
+            conhecimento com a comunidade.
+          </p>
+
+          <p>
+            Se identificou de alguma forma? Sinta-se a vontade para entrar em
+            contato conosco através de alguma de nossas redes sociais e só
+            vem!!! ;)
           </p>
         </S.AboutText>
 

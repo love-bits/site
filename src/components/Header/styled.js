@@ -11,6 +11,45 @@ export const Header = styled.header`
   align-items: center;
   justify-content: space-between;
 
+  @media (max-width: 900px) {
+    padding: 2rem;
+  }
+
+  @media (max-width: 575px) {
+    img {
+      display: none;
+    }
+
+    nav {
+      width: 100vw;
+      height: 100vh;
+      background-color: #e74c3c;
+      position: fixed;
+      top: 0;
+      right: ${props => (props.open ? 0 : "-343px")};
+      z-index: 1;
+      transition: all 0.2s;
+
+      &:after {
+        content: "";
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: ${props => (props.open ? "-100%" : "100%")};
+        background-color: #fff;
+      }
+    }
+
+    ul {
+      flex-direction: column;
+
+      li {
+        padding: 1rem 0;
+      }
+    }
+  }
+
   div {
     display: flex;
     align-items: center;
@@ -24,8 +63,11 @@ export const Header = styled.header`
     font-weight: normal;
   }
 
-  ul {
+  nav {
     width: 343px;
+  }
+
+  ul {
     display: flex;
     justify-content: space-between;
 
@@ -64,4 +106,18 @@ export const Header = styled.header`
 
 export const Logo = styled(Img)`
   width: 33px;
+`
+
+export const NavButton = styled.button`
+  position: relative;
+  right: ${props => (props.open ? "343px" : 0)};
+  border: 0;
+  background-color: transparent;
+  font-size: 2.5rem;
+  color: #e74c3c;
+  z-index: 2;
+
+  @media (min-width: 575px) {
+    display: none;
+  }
 `

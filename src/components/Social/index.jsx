@@ -21,17 +21,26 @@ export function Social() {
           <a
             href="https://www.facebook.com/Love-Bits-106953344376684"
             target="_blank"
+            rel="noreferrer"
           >
             <AiFillFacebook fill="#4267B2" />
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/_love.bits/" target="_blank">
+          <a
+            href="https://www.instagram.com/_love.bits/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiFillInstagram fill="#db3180" />
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/_LoveBits" target="_blank">
+          <a
+            href="https://twitter.com/_LoveBits"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiFillTwitterSquare fill="#50ABF1" />
           </a>
         </li>

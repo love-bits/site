@@ -2,9 +2,14 @@ import styled from "@emotion/styled"
 
 export const About = styled.section`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #565387;
   position: relative;
+
+  @media (max-width: 900px) {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
 `
 
 export const Content = styled.div`
@@ -15,19 +20,37 @@ export const Content = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  div {
+  @media (max-width: 900px) {
+    justify-content: space-around;
   }
 `
 
 export const AboutText = styled.div`
-  width: 350px;
+  width: 100%;
+  max-width: 500px;
   color: #fff;
   font-size: 16px;
   line-height: 25px;
+
+  h3 {
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+    padding: 2rem;
+
+    h3 {
+      display: block;
+    }
+  }
 `
 
 export const AboutImage = styled.div`
   text-align: center;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
 
   h3 {
     font-size: 24px;
