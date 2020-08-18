@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import { AiOutlineMenu } from "react-icons/ai"
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"
 
 import * as S from "./styled"
 import { useState } from "react"
@@ -34,7 +34,7 @@ export function Header({ logo }) {
       </S.NavButton>
 
       <nav>
-        <ul>
+        <ul onClick={() => setShowSidebar(false)}>
           <li>
             <a href="#about">Sobre</a>
           </li>
@@ -51,6 +51,11 @@ export function Header({ logo }) {
             </a>
           </li>
         </ul>
+        {showSidebar && (
+          <S.CloseNav>
+            <AiOutlineClose onClick={() => setShowSidebar(false)} />
+          </S.CloseNav>
+        )}
       </nav>
     </S.Header>
   )

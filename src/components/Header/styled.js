@@ -20,6 +20,10 @@ export const Header = styled.header`
       display: none;
     }
 
+    h1 {
+      padding-left: 0;
+    }
+
     nav {
       width: 100vw;
       height: 100vh;
@@ -120,4 +124,14 @@ export const NavButton = styled.button`
   @media (min-width: 575px) {
     display: none;
   }
+`
+
+export const CloseNav = styled.button`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 0;
+  background-color: transparent;
+  font-size: 2.5rem;
+  color: #fff;
 `
