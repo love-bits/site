@@ -18,7 +18,7 @@ export function About() {
   `)
 
   return (
-    <S.About>
+    <S.About id="about">
       <svg
         viewBox="0 0 1440 320"
         css={{

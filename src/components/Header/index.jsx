@@ -39,7 +39,7 @@ export function Header({ logo }) {
             <a href="#about">Sobre</a>
           </li>
           <li>
-            <a href="#meetups">Encontros</a>
+            <a href="#meetings">Encontros</a>
           </li>
           <li>
             <a

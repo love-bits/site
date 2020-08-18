@@ -6,7 +6,7 @@ const allMeetings = require("../../data/meetings.json")
 
 export function Meeetings() {
   return (
-    <S.Meeetings>
+    <S.Meeetings id="meetings">
       <h3>Encontros</h3>
       <div>
         {allMeetings.meetings.map((meeting, index) => (
