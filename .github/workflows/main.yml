@@ -13,8 +13,8 @@ jobs:
         ref: ${{ github.head_ref }}
     - name: Setup Python
       uses: actions/setup-python@v2.1.2
-    - name: Install dependency
-      run: python3 -m pip install bs4
+    - name: Install dependencies
+      run: python3 -m pip install bs4 pytz
     - name: Run scrapping script
       run: python3 ./src/data/yt_data_scrapping.py
     - uses: stefanzweifel/git-auto-commit-action@v4
