@@ -11,8 +11,10 @@ jobs:
     - uses: actions/checkout@v2
       with:
         ref: ${{ github.head_ref }}
+    - name: Install dependency
+      run: python3 -m pip install bs4
     - name: Run scrapping script
-      run: python ./src/data/yt_data_scrapping.py
+      run: python3 ./src/data/yt_data_scrapping.py
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: Auto update meetings.json
