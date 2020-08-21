@@ -55,5 +55,5 @@ def getDict(url):
 url = 'https://www.youtube.com/playlist?list=PLa_Eeh4hhoGc_yIrmXWaWhnv5yLc9Ttab'
 data_dict = getDict(url)
 
-with open('meetings.json', 'w') as fp:
+with open('./src/data/meetings.json', 'w') as fp:
     json.dump(data_dict, fp)
