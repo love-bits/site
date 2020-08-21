@@ -2,7 +2,7 @@ name: Automate the generation of meetings file
 
 on:
   schedule:
-    - cron:  '*/5 * * * *'
+    - cron:  '00 11 * * 1'
 
 jobs:
   build:
