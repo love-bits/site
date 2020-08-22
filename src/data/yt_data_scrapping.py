@@ -1,6 +1,7 @@
 import re
 import json
 import pytz
+import pandas as pd
 from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen as uReq
 from datetime import datetime, timezone, timedelta
@@ -13,7 +14,7 @@ def getBSHtml(url):
     return page_soup
 
 def getDate(url):
-    #get the date and convert to DD/MM/AAAA às hh:mm horas
+    #get the date
     page_soup = getBSHtml(url)
     date = re.findall(r'meta content="(.+?)".+?startDate"', page_soup.prettify())[0]
     date = re.split('[T+]', date)
@@ -24,13 +25,12 @@ def getDate(url):
     diff = timedelta(0,0,0,0,0,-3)
     fuse = timezone(diff)
     date = date.astimezone(fuse)
-    date = re.split('[ :-]',str(date))
-    date = date[2]+'/'+date[1]+'/'+date[0]+' às '+date[3]+':'+date[4]+' horas'
     return date
     
 def getDict(url):
     #return a dictonary with the links, image links, date and the titles of the videos
     link, date, data_list = [], [], []
+    data_frame = pd.DataFrame(columns=['img','date','title','link'])
     page_soup = getBSHtml(url)
     
     #find video id
@@ -47,13 +47,21 @@ def getDict(url):
     for count, i in enumerate(id):
         link.append('https://www.youtube.com/watch?v='+i)
         date.append(getDate(link[count]))
-        data_list.append({'img':img[count], 'date':date[count], 'title':title[count], 'link':link[count]})
-        
+        data_frame.loc[count] = [img[count], date[count], title[count], link[count]] 
+    
+    #order data frame by date
+    data_frame.sort_values(by='date', ascending=False, inplace=True)
+    
+    #convert date to DD/MM/AAAA às hh:mm horas
+    data_frame['date'] = data_frame['date'].apply(lambda date : re.split('[ :-]',str(date)))
+    data_frame['date'] = data_frame['date'].apply(lambda date : date[2]+'/'+date[1]+'/'+date[0]+' às '+date[3]+':'+date[4]+' horas')
+    data_list = data_frame.to_dict('records')
+    
     return {'meetings':data_list}
 
 
 url = 'https://www.youtube.com/playlist?list=PLa_Eeh4hhoGc_yIrmXWaWhnv5yLc9Ttab'
 data_dict = getDict(url)
-
+  
 with open('./src/data/meetings.json', 'w') as fp:
     json.dump(data_dict, fp)
