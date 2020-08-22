@@ -6,6 +6,10 @@ export const About = styled.section`
   background-color: #333333;
   position: relative;
 
+  a {
+    color: #e74c3c;
+  }
+
   @media (max-width: 900px) {
     height: fit-content;
     margin-bottom: 2rem;

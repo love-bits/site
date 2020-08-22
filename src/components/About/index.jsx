@@ -62,9 +62,16 @@ export function About() {
           </p>
 
           <p>
-            Se identificou de alguma forma? Sinta-se a vontade para entrar em
-            contato conosco através de alguma de nossas redes sociais e só
-            vem!!! ;)
+            Se identificou de alguma forma? Acesse o{" "}
+            <a
+              href="https://github.com/love-bits/sobre"
+              target="_blank"
+              rel="noreferrer"
+            >
+              nosso código de conduta
+            </a>{" "}
+            e sinta-se a vontade para entrar em contato conosco através de
+            alguma de nossas redes sociais e só vem!!! ;)
           </p>
         </S.AboutText>
 
