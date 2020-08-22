@@ -23,10 +23,6 @@ export const Header = styled.header`
   }
 
   @media (max-width: 575px) {
-    img {
-      display: none;
-    }
-
     h1 {
       padding-left: 0;
     }
