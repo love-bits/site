@@ -27,8 +27,8 @@ export const Meeetings = styled.section`
 
   > div {
     width: 100%;
-    height: 450px;
-    padding: 0.5rem;
+    height: 520px;
+    padding: 0.5rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,12 +49,16 @@ export const Meeetings = styled.section`
       background-color: #bbb;
       border-radius: 50px;
     }
+
+    @media (max-width: 900px) {
+      padding: 0.5rem;
+    }
   }
 `
 
 export const MeetingCard = styled.div`
   width: 250px;
-  height: 400px;
+  height: 450px;
   padding-bottom: 0.5rem;
   background-color: #fff;
   box-shadow: 0px 0px 25px rgba(196, 196, 196, 0.29);
@@ -65,6 +69,12 @@ export const MeetingCard = styled.div`
   align-items: center;
   flex-shrink: 0;
   overflow: hidden;
+  opacity: ${({ isActive }) => (isActive ? 1 : 0.7)};
+  transform: ${({ isActive }) => (isActive ? `scale(1.08)` : `scale(1)`)};
+
+  &:hover {
+    opacity: 1;
+  }
 
   a {
     width: 154px;
@@ -102,7 +112,7 @@ export const MeetingCardInfo = styled.div`
   h4 {
     font-size: 24px;
     font-weight: bold;
-    color: #565387;
+    color: #e74c3c;
   }
 
   time {
@@ -119,7 +129,7 @@ export const AllMeetingsButton = styled.a`
   height: 36px;
   border: 0;
   border-radius: 5px;
-  background-color: #565387;
+  background-color: #333333;
   color: #fff;
   font-size: 15px;
   margin: 0 auto;

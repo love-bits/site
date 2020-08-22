@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 export const About = styled.section`
   width: 100%;
   min-height: 100vh;
-  background-color: #565387;
+  background-color: #333333;
   position: relative;
 
   @media (max-width: 900px) {

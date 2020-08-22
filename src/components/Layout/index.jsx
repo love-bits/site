@@ -33,6 +33,12 @@ const resetBody = css`
   button {
     cursor: pointer;
   }
+
+  a {
+    &:hover {
+      cursor: pointer;
+    }
+  }
 `
 
 const Layout = ({ children }) => {

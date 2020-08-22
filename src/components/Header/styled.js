@@ -1,11 +1,18 @@
 import styled from "@emotion/styled"
 import Img from "gatsby-image"
 
+export const Container = styled.div`
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  z-index: 2;
+`
+
 export const Header = styled.header`
   width: 100%;
   max-width: 859px;
-  margin: 0 auto;
   height: 100px;
+  margin: 0 auto;
   padding: 2rem 0;
   display: flex;
   align-items: center;
@@ -54,7 +61,7 @@ export const Header = styled.header`
     }
   }
 
-  div {
+  > a {
     display: flex;
     align-items: center;
   }
