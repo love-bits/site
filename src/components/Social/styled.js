@@ -8,6 +8,12 @@ export const Social = styled.section`
   justify-content: center;
   align-items: center;
 
+  @media (max-width: 900px) {
+    + div {
+      padding-top: 100px;
+    }
+  }
+
   p {
     color: #565387;
     font-size: 24px;
