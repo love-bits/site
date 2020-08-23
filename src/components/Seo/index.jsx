@@ -20,7 +20,7 @@ export function SEO({ description, lang, meta, title, image }) {
   const metaDescription = description || site.siteMetadata.description
   const coverImage =
     image ||
-    "https://www.crisgon.dev/static/7dea4e14d8cac0f8210c2d542ba56bbd/954df/profile.jpg"
+    "https://lovebitstech.netlify.app/static/b1f19471525552435481fa3ad2c09af5/65e33/love-bits-icon.png"
 
   return (
     <Helmet

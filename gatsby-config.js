@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Love Bits`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Site com informações do Love Bits.`,
     author: `@crisgon`,
   },
   plugins: [
