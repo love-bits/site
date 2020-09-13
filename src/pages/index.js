@@ -2,7 +2,15 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/Layout"
-import { Banner, Header, SEO, About, Meeetings, Social } from "../components"
+import {
+  Banner,
+  Header,
+  SEO,
+  About,
+  Meeetings,
+  Social,
+  Sponsors,
+} from "../components"
 
 const IndexPage = () => {
   const { placeholderImage } = useStaticQuery(graphql`
@@ -24,6 +32,7 @@ const IndexPage = () => {
       <Banner logo={placeholderImage.childImageSharp.fluid} />
       <About />
       <Meeetings />
+      <Sponsors />
       <Social />
     </Layout>
   )

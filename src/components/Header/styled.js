@@ -33,7 +33,7 @@ export const Header = styled.header`
       background-color: #e74c3c;
       position: fixed;
       top: 0;
-      right: ${props => (props.open ? 0 : "-343px")};
+      right: ${props => (props.open ? 0 : "-500px")};
       z-index: 1;
       transition: all 0.2s;
 
@@ -71,7 +71,11 @@ export const Header = styled.header`
   }
 
   nav {
-    width: 343px;
+    width: 500px;
+
+    @media (max-width: 900px) {
+      width: 100%;
+    }
   }
 
   ul {

@@ -11,7 +11,7 @@ import * as S from "./styled"
 
 export function Social() {
   return (
-    <S.Social>
+    <S.Social id="social">
       <SocialSVG />
 
       <p>Siga nossas redes sociais</p>

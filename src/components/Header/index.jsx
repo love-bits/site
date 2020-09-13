@@ -53,6 +53,16 @@ export function Header({ logo }) {
               </Link>
             </li>
             <li>
+              <Link
+                to="sponsors"
+                activeClass="active"
+                offset={-100}
+                duration={500}
+              >
+                Nossos Apoiadores
+              </Link>
+            </li>
+            <li>
               <a
                 href="https://discord.gg/jDVnYrr"
                 target="_blank"
