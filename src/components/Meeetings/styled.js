@@ -122,6 +122,7 @@ export const MeetingCardInfo = styled.div`
 
   p {
     text-align: center;
+    display: none;
   }
 `
 export const AllMeetingsButton = styled.a`
