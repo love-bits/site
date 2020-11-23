@@ -2,7 +2,7 @@ name: Automate the generation of meetings file
 
 on:
   schedule:
-    - cron:  '00 11 * * 1'
+    - cron:  '*/5 * * * *'
 
 jobs:
   build:
@@ -12,7 +12,7 @@ jobs:
       with:
         ref: ${{ github.head_ref }}
     - name: Setup Python
-      uses: actions/setup-python@v2.1.2
+      uses: actions/setup-python@v2
     - name: Install dependencies
       run: python3 -m pip install bs4 pytz pandas
     - name: Run scrapping script
